@@ -1,0 +1,417 @@
+body {
+  color: #fff;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.2;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: relative;
+  top: 0;
+}
+
+.flex-center {
+  margin: auto;
+}
+
+.header {
+  min-height: 700px;
+  height: 100vh;
+  background-color: #180035;
+  background-attachment: fixed;
+  background-image: url('../img/bg.jpg');
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #180035;
+  opacity: 0.5;
+}
+
+.header > * {
+  position: relative;
+}
+
+.header-composition {
+  text-align: center;
+  position: relative;
+}
+
+.header-composition p {
+  margin-top: 40px;
+}
+
+.welcome {
+  margin-bottom: 80px;
+}
+
+.welcome p {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0;
+  margin-bottom: -10px;
+}
+
+.welcome p span {
+  margin: 0 10px;
+}
+
+.welcome p::before,
+.welcome p::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.welcome .h1 {
+  font-weight: bold;
+  font-size: 80px;
+  margin: 0;
+}
+
+.welcome .h2 {
+  font-weight: 300;
+  font-size: 78px;
+  margin: 0;
+  color: #e8276c;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+  white-space: nowrap;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  color: #e8276c;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 16px 55px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  border-radius: 2px;
+  text-align: center;
+  position: relative;
+  outline: none;
+  -webkit-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+  cursor: pointer;
+}
+
+.button:focus {
+  text-decoration: none;
+  color: #e8276c;
+}
+
+.button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #ea3e7c;
+}
+
+.button:hover::after {
+  opacity: 0.22;
+}
+
+.button:active {
+  background-color: #de185f;
+}
+
+.button:active::after {
+  opacity: 0.32;
+}
+
+#about {
+  background-color: #180035;
+  height: 55vh;
+}
+
+.about-text {
+  margin-top: 5vh;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.avatar {
+  background: no-repeat center / cover;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-image: url('../img/avatar.jpg');
+}
+
+.charac {
+  margin: 7% 0;
+  font-size: 20px;
+  padding-left: 50px;
+  margin-left: 0px;
+  border-left: 1px solid #fff;
+  white-space: nowrap;
+  line-height: 2.25;
+}
+
+.tit {
+  color: #e8276c;
+  font-weight: bold;
+}
+
+#skills {
+  color: #180035;
+  background-color: #dedede;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.s-img {
+  width: 100px;
+  height: 100px;
+  margin-left: calc(50% - 50px);
+}
+
+.skills-item {
+  margin-top: 50px;
+}
+
+.skills-item h4,
+.skills-item p {
+  text-align: center;
+  color: #180035;
+}
+
+.skills-item p {
+  font-size: 12px;
+}
+
+.skills-item h4 {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.s-c {
+  padding: 0 50px;
+}
+
+#projects {
+  color: #180035;
+  background-color: #dedede;
+  padding-bottom: 30px;
+}
+
+.project {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project-image {
+  width: 50%;
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.project-content {
+  width: calc(50% - 20px);
+  margin-left: 20px;
+}
+
+#footer {
+  font-size: 15px;
+  white-space: nowrap;
+  text-align: center;
+  padding: 30px 0;
+  letter-spacing: 1px;
+  background-color: #180035;
+}
+
+@media (max-width: 1200px) {
+  .welcome p {
+    font-size: 18px;
+  }
+  .welcome .h1 {
+    font-size: 66px;
+  }
+  .welcome .h2 {
+    font-size: 64px;
+  }
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+  .charac {
+    font-size: 19px;
+    padding-left: 45px;
+    margin-left: 5px;
+  }
+  .about-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .welcome p {
+    font-size: 17px;
+  }
+  .welcome .h1 {
+    font-size: 51px;
+  }
+  .welcome .h2 {
+    font-size: 49px;
+  }
+  .avatar {
+    width: 180px;
+    height: 180px;
+    margin-left: -50px;
+  }
+  .charac {
+    font-size: 17px;
+    padding-left: 40px;
+    margin-left: 10px;
+    margin-left: -30px;
+  }
+  .about-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome p {
+    font-size: 15px;
+  }
+  .button {
+    padding: 13px 48px;
+  }
+  #about {
+    padding-top: 40px;
+    height: 70vh;
+  }
+  .avatar {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+  }
+  .charac {
+    border-left: 0px;
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  #skills .container {
+    width: 450px;
+  }
+  .about-text {
+    margin-top: 0;
+  }
+  .about-text {
+    font-size: 14px;
+  }
+  .project {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-image,
+  .project-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 498px) {
+  .welcome p {
+    font-size: 13px;
+  }
+  .welcome .h1 {
+    font-size: 43px;
+    padding-top: 8px;
+  }
+  .welcome .h2 {
+    font-size: 42px;
+  }
+  .button {
+    padding: 11px 43px;
+  }
+  #about {
+    height: 75vh;
+  }
+  #skills .container {
+    width: 320px;
+  }
+  .about-text {
+    font-size: 13px;
+  }
+  #footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .welcome p {
+    font-size: 12px;
+  }
+  .welcome .h1 {
+    font-size: 34px;
+    padding-top: 7px;
+  }
+  .welcome .h2 {
+    font-size: 32px;
+  }
+  #about {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 336px) {
+  .welcome p {
+    font-size: 9px;
+  }
+  .welcome .h1 {
+    font-size: 30px;
+    padding-top: 7px;
+  }
+  .welcome .h2 {
+    font-size: 28px;
+  }
+  .button {
+    padding: 9px 38px;
+  }
+  #skills {
+    height: 315vh;
+  }
+  #skills .container {
+    width: 280px;
+  }
+  .about-text {
+    font-size: 12px;
+  }
+  #footer {
+    font-size: 7px;
+  }
+}
